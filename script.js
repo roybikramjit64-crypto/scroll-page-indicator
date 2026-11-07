@@ -6,7 +6,7 @@ function updateProgress() {
     const scrollTop = window.scrollY;
 
     //Total scrollable height (full page height minus visible window height)
-    const docHeight = document.documentElement.scrollHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
 
     const progress = Math.round((scrollTop/docHeight) * 100);
 
